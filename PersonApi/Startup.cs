@@ -38,6 +38,8 @@ namespace PersonApi
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
             services.AddScoped(typeof(IContext), typeof(Context));
             services.AddScoped(typeof(IRepositoryReadConductor<>), typeof(RepositoryReadConductor<>));
+            services.AddScoped(typeof(IRepositoryCreate<>), typeof(RepositoryCreate<>));
+            services.AddScoped(typeof(IRepositoryCreateConductor<>), typeof(RepositoryCreateConductor<>));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

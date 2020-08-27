@@ -9,5 +9,6 @@ namespace PersonApi.Interfaces
        bool SaveChanges();
        IResult<T> FindById(long id);
        IResult<IQueryable<T>> FindAll();
+       IResult<T> Create(T obj);
     }
 }
