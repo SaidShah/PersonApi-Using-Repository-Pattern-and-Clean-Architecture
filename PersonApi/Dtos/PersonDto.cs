@@ -1,10 +1,9 @@
 using System;
 using System.ComponentModel.DataAnnotations;
-using PersonApi.Interfaces;
 
-namespace PersonApi.Models
+namespace PersonApi.Dtos
 {
-    public class Person : Entity
+    public class PersonDto
     {
         [Required]
         public string FirstName { get; set; }
@@ -18,14 +17,9 @@ namespace PersonApi.Models
         [Required]
         public bool IsSmart { get; set; }
         
-        [Required]
         public DateTimeOffset CreatedOn { get; set; }
         
         public DateTimeOffset? DeletedOn { get; set; }
 
-        public string FullName
-        {
-            get => (FirstName + " " + LastName);
-        }
     }
 }

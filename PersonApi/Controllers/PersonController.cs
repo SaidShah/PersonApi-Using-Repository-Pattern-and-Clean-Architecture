@@ -1,6 +1,8 @@
 using System;
 using System.Linq;
+using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
+using PersonApi.Dtos;
 using PersonApi.Interfaces;
 using PersonApi.Models;
 
@@ -12,9 +14,11 @@ namespace PersonApi.Controllers
     {
         private IRepositoryReadConductor<Person> _repositoryReadConductor;
         private IRepositoryCreateConductor<Person> _repositoryCreateConductor;
+        private IMapper _mapper;
 
-        public PersonController(IRepositoryReadConductor<Person> repositoryReadConductor, IRepositoryCreateConductor<Person> repositoryCreateConductor)
+        public PersonController(IRepositoryReadConductor<Person> repositoryReadConductor, IRepositoryCreateConductor<Person> repositoryCreateConductor, IMapper mapper)
         {
+            _mapper = mapper;
             _repositoryReadConductor = repositoryReadConductor;
             _repositoryCreateConductor = repositoryCreateConductor;
         }
@@ -30,20 +34,15 @@ namespace PersonApi.Controllers
         public IActionResult FindById(int id)
         {
             var result = _repositoryReadConductor.FindById(id);
-            return Ok(result);
+            var dto = _mapper.Map<PersonDto>(result.ResultObject);
+            return Ok(dto);
         }
 
         [HttpPost]
-        public IActionResult Create(Person obj)
+        public IActionResult Create(PersonDto obj)
         {
-            var person = new Person{
-                FirstName = "John",
-                LastName = "Smith",
-                Gender = "Male",
-                IsSmart = true,
-                CreatedOn = DateTimeOffset.Now.AddHours(-3)
-            };
-            
+            var person = _mapper.Map<Person>(obj);
+            person.CreatedOn = DateTimeOffset.Now;
             var result = _repositoryCreateConductor.Create(person);
             if (result.HasErrors)
             {

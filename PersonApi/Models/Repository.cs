@@ -19,11 +19,6 @@ namespace PersonApi.Models
             Query = context.Query<T>();
         }
 
-        public bool SaveChanges()
-        {
-            return (Context.SaveChanges() >= 0);
-        }
-
         public IResult<T> FindById(long id)
         {
             var result = new Result<T>();
@@ -42,7 +37,8 @@ namespace PersonApi.Models
         {
             var result = new Result<T>();
             Context.Add(person);
-            result.HasErrors = (SaveChanges());
+            var totalRecordsSaved = Context.SaveChanges();
+            result.HasErrors = totalRecordsSaved >= 0;
             return result;
         }
     }
