@@ -38,7 +38,7 @@ namespace PersonApi.Models
             var result = new Result<T>();
             Context.Add(person);
             var totalRecordsSaved = Context.SaveChanges();
-            result.HasErrors = totalRecordsSaved >= 0;
+            result.HasErrors = totalRecordsSaved <= 0;
             return result;
         }
     }
