@@ -1,8 +1,8 @@
-using System.Collections.Generic;
 using System.Linq;
 using PersonApi.Interfaces;
+using PersonApi.Models;
 
-namespace PersonApi.Models
+namespace PersonApi.Infrastructure
 {
     public class RepositoryRead<T> : IRepositoryRead<T> where T : Entity
     {

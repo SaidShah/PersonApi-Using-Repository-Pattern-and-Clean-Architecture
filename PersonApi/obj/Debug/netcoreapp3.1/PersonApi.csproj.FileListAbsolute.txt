@@ -64,3 +64,10 @@ D:\Personal Projects\PersonApi\PersonApi\obj\Debug\netcoreapp3.1\staticwebassets
 D:\Personal Projects\PersonApi\PersonApi\obj\Debug\netcoreapp3.1\PersonApi.dll
 D:\Personal Projects\PersonApi\PersonApi\obj\Debug\netcoreapp3.1\PersonApi.pdb
 D:\Personal Projects\PersonApi\PersonApi\obj\Debug\netcoreapp3.1\PersonApi.genruntimeconfig.cache
+D:\Personal Projects\PersonApi\PersonApi\bin\Debug\netcoreapp3.1\PersonApi.Core.dll
+D:\Personal Projects\PersonApi\PersonApi\bin\Debug\netcoreapp3.1\PersonApi.Infrastructure.dll
+D:\Personal Projects\PersonApi\PersonApi\bin\Debug\netcoreapp3.1\PersonApi.Core.pdb
+D:\Personal Projects\PersonApi\PersonApi\bin\Debug\netcoreapp3.1\PersonApi.Infrastructure.pdb
+D:\Personal Projects\PersonApi\PersonApi\bin\Debug\netcoreapp3.1\PersonApi.Presentation.dll
+D:\Personal Projects\PersonApi\PersonApi\bin\Debug\netcoreapp3.1\PersonApi.Presentation.pdb
+D:\Personal Projects\PersonApi\PersonApi\obj\Debug\netcoreapp3.1\PersonApi.MvcApplicationPartsAssemblyInfo.cs

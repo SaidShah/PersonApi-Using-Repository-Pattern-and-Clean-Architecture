@@ -19,7 +19,17 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
-        "projectReferences": {}
+        "projectReferences": {
+          "D:\\Personal Projects\\PersonApi\\PersonApi.Core\\PersonApi.Core.csproj": {
+            "projectPath": "D:\\Personal Projects\\PersonApi\\PersonApi.Core\\PersonApi.Core.csproj"
+          },
+          "D:\\Personal Projects\\PersonApi\\PersonApi.Infrastructure\\PersonApi.Infrastructure.csproj": {
+            "projectPath": "D:\\Personal Projects\\PersonApi\\PersonApi.Infrastructure\\PersonApi.Infrastructure.csproj"
+          },
+          "D:\\Personal Projects\\PersonApi\\PersonApi.Presentation\\PersonApi.Presentation.csproj": {
+            "projectPath": "D:\\Personal Projects\\PersonApi\\PersonApi.Presentation\\PersonApi.Presentation.csproj"
+          }
+        }
       }
     },
     "warningProperties": {

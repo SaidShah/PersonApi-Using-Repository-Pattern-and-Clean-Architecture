@@ -1,9 +1,8 @@
-using System.Collections.Generic;
-using System.Globalization;
 using System.Linq;
 using PersonApi.Interfaces;
+using PersonApi.Models;
 
-namespace PersonApi.Models
+namespace PersonApi.Conductors
 {
     public class RepositoryReadConductor<T> : IRepositoryReadConductor<T> where T : Entity
     {

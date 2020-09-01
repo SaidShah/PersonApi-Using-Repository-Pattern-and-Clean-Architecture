@@ -4,6 +4,198 @@
     "D:\\Personal Projects\\PersonApi\\PersonApi\\PersonApi.csproj": {}
   },
   "projects": {
+    "D:\\Personal Projects\\PersonApi\\PersonApi.Core\\PersonApi.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Personal Projects\\PersonApi\\PersonApi.Core\\PersonApi.Core.csproj",
+        "projectName": "PersonApi.Core",
+        "projectPath": "D:\\Personal Projects\\PersonApi\\PersonApi.Core\\PersonApi.Core.csproj",
+        "packagesPath": "C:\\Users\\Said Shah\\.nuget\\packages\\",
+        "outputPath": "D:\\Personal Projects\\PersonApi\\PersonApi.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Said Shah\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://nuget.andculture.com/nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Personal Projects\\PersonApi\\PersonApi.Infrastructure\\PersonApi.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Personal Projects\\PersonApi\\PersonApi.Infrastructure\\PersonApi.Infrastructure.csproj",
+        "projectName": "PersonApi.Infrastructure",
+        "projectPath": "D:\\Personal Projects\\PersonApi\\PersonApi.Infrastructure\\PersonApi.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Said Shah\\.nuget\\packages\\",
+        "outputPath": "D:\\Personal Projects\\PersonApi\\PersonApi.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Said Shah\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://nuget.andculture.com/nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "D:\\Personal Projects\\PersonApi\\PersonApi.Core\\PersonApi.Core.csproj": {
+                "projectPath": "D:\\Personal Projects\\PersonApi\\PersonApi.Core\\PersonApi.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.7, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Personal Projects\\PersonApi\\PersonApi.Presentation\\PersonApi.Presentation.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Personal Projects\\PersonApi\\PersonApi.Presentation\\PersonApi.Presentation.csproj",
+        "projectName": "PersonApi.Presentation",
+        "projectPath": "D:\\Personal Projects\\PersonApi\\PersonApi.Presentation\\PersonApi.Presentation.csproj",
+        "packagesPath": "C:\\Users\\Said Shah\\.nuget\\packages\\",
+        "outputPath": "D:\\Personal Projects\\PersonApi\\PersonApi.Presentation\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Said Shah\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://nuget.andculture.com/nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "D:\\Personal Projects\\PersonApi\\PersonApi.Core\\PersonApi.Core.csproj": {
+                "projectPath": "D:\\Personal Projects\\PersonApi\\PersonApi.Core\\PersonApi.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[3.1.7, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "D:\\Personal Projects\\PersonApi\\PersonApi\\PersonApi.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -30,7 +222,17 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\Personal Projects\\PersonApi\\PersonApi.Core\\PersonApi.Core.csproj": {
+                "projectPath": "D:\\Personal Projects\\PersonApi\\PersonApi.Core\\PersonApi.Core.csproj"
+              },
+              "D:\\Personal Projects\\PersonApi\\PersonApi.Infrastructure\\PersonApi.Infrastructure.csproj": {
+                "projectPath": "D:\\Personal Projects\\PersonApi\\PersonApi.Infrastructure\\PersonApi.Infrastructure.csproj"
+              },
+              "D:\\Personal Projects\\PersonApi\\PersonApi.Presentation\\PersonApi.Presentation.csproj": {
+                "projectPath": "D:\\Personal Projects\\PersonApi\\PersonApi.Presentation\\PersonApi.Presentation.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

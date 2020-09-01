@@ -1,12 +1,8 @@
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Linq.Expressions;
-using System.Net.Http.Headers;
-using PersonApi.Data;
 using PersonApi.Interfaces;
+using PersonApi.Models;
 
-namespace PersonApi.Models
+namespace PersonApi.Infrastructure
 {
     public class Repository<T> : IRepository<T> where T : Entity
     {

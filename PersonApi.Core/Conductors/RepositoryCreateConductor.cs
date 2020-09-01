@@ -1,7 +1,7 @@
-using System;
 using PersonApi.Interfaces;
+using PersonApi.Models;
 
-namespace PersonApi.Models
+namespace PersonApi.Conductors
 {
     public class RepositoryCreateConductor<T> : IRepositoryCreateConductor<T> where T : Entity
     {

@@ -7,9 +7,10 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using PersonApi.Data;
 using PersonApi.Interfaces;
-using PersonApi.Models;
 using AutoMapper;
 using Newtonsoft.Json.Serialization;
+using PersonApi.Conductors;
+using PersonApi.Infrastructure;
 
 namespace PersonApi
 {

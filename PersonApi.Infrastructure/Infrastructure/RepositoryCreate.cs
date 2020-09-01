@@ -1,6 +1,7 @@
 using PersonApi.Interfaces;
+using PersonApi.Models;
 
-namespace PersonApi.Models
+namespace PersonApi.Infrastructure
 {
     public class RepositoryCreate<T> : IRepositoryCreate<T> where T : Entity
     {

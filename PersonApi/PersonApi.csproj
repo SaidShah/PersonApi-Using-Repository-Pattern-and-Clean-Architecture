@@ -14,7 +14,9 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Conductors" />
+      <ProjectReference Include="..\PersonApi.Core\PersonApi.Core.csproj" />
+      <ProjectReference Include="..\PersonApi.Infrastructure\PersonApi.Infrastructure.csproj" />
+      <ProjectReference Include="..\PersonApi.Presentation\PersonApi.Presentation.csproj" />
     </ItemGroup>
 
 
